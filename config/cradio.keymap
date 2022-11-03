@@ -26,55 +26,55 @@
 
 &default_layer {
         bindings = <
-                &kp Q &kp W &kp F &kp P &kp B           &kp J &kp L &kp U &kp Y &kp SEMI
-                &kp A &kp R &kp S &kp T &kp G           &kp M &kp N &kp E &kp I &kp O
-                &kp Z &kp X &kp C &kp D &kp V           &kp K &kp H &kp COMMA &kp DOT &kp APOS
-                &mo 1 &kp LSHFT                  	    &lt 3 SPACE &mo 2                          
+                &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI
+                &kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
+                &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp APOS
+                &mo 1 &kp LSHFT &lt 3 SPACE &mo 2                          
         >;
 };
 
 &nav_layer {
         bindings = <
-                &none &none &none &none &none                               &none &none &kp HOME &kp UP &kp END &none
-                &sk LSHIFT &sk LCTRL &sk LALT &sk LWIN &none                &none &kp LEFT &kp DOWN &kp RIGHT &none
-                &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y)           &none &kp PG_UP &kp PG_DN &none &none
-                &trans &trans                             	                &trans &mo 3 
+                &none &none &none &none &none &none &none &kp HOME &kp UP &kp END &none
+                &sk LSHIFT &sk LCTRL &sk LALT &sk LWIN &none &none &kp LEFT &kp DOWN &kp RIGHT &none
+                &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &none &kp PG_UP &kp PG_DN &none &none
+                &trans &trans &trans &mo 3 
         >;
 };
 
 &sym_layer {
         bindings = <
-                &none &kp LBKT &kp LBRC &kp LPAR &kp TILDE                  &kp CARET &kp RPAR &kp RBRC &kp LBKT &kp GRAVE
-                &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DOLLAR           &kp HASH &kp QMARK &kp EXCL &kp AMPS &kp BSLH
-                &kp EQUAL &kp PIPE &kp AT &kp FSLH &kp PRCNT                &none &none &none &none &none
-                &mo 3 &trans                            			        &trans &trans
+                &none &kp LBKT &kp LBRC &kp LPAR &kp TILDE &kp CARET &kp RPAR &kp RBRC &kp LBKT &kp GRAVE
+                &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DOLLAR &kp HASH &kp QMARK &kp EXCL &kp AMPS &kp BSLH
+                &kp EQUAL &kp PIPE &kp AT &kp FSLH &kp PRCNT &none &none &none &none &none
+                &mo 3 &trans &trans &trans
         >;
 };
 
 &settings_layer {
         bindings = <
-                &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none                 &none &none &none &none &none
-                &kp F11 &mt F4 N4  &mt F5 N5  &mt F6 N6  &none              &none &none &none &none &rgb_ug RGB_TOG
-                &mt F10 N0   &mt F1 N1  &mt F2 N2  &mt F3 N3  &none         &none &none &none &none &ext_power EP_TOG
-                &none &none                             	                &none &none
+                &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none &none &none &none &none &none
+                &kp F11 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &rgb_ug RGB_TOG
+                &mt F10 N0 &mt F1 N1  &mt F2 N2  &mt F3 N3 &none &none &none &none &none &ext_power EP_TOG
+                &none &none &none &none
         >;
 };
 
 &gaming_layer {
         bindings = <
-                &kp LALT &kp Q &kp W &kp E &kp R            &none &none &none &none &none
-                &kp LCTRL &kp A &kp S &kp D &kp F           &none &none &none &none &none
-                &kp LSHIFT &kp Z &kp X &kp C &kp V          &none &none &none &none &kp RSHIFT
-                &mo 3 &kp SPACE                             &none &none
+                &kp LALT &kp Q &kp W &kp E &kp R &none &none &none &none &none
+                &kp LCTRL &kp A &kp S &kp D &kp F &none &none &none &none &none
+                &kp LSHIFT &kp Z &kp X &kp C &kp V &none &none &none &none &kp RSHIFT
+                &mo 3 &kp SPACE &none &none
         >;
 };
 
 &qwerty_layer {
         bindings = <
-                &kp Q &kp W &kp E &kp R &kp T               &kp Y &kp U &kp I &kp O &kp P
-                &kp A &kp S &kp D &kp F &kp G               &kp H &kp J &kp K &kp L &kp SEMI
-                &kp Z &kp X &kp C &kp V &kp B               &kp N &kp M &kp COMMA &kp DOT &kp APOS
-                &mo 1 &kp LSHFT                             &kp SPACE &mo 2
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
+                &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI
+                &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp APOS
+                &mo 1 &kp LSHFT &kp SPACE &mo 2
         >;
 };
 
