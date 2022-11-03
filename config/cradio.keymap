@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h> // AFK Power management
 
 
 / {
@@ -54,7 +53,7 @@
 &settings_layer {
         bindings = <
                 &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none &none &none &none &none &none
-                &kp F11 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &rgb_ug RGB_TOG
+                &kp F11 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &none
                 &mt F10 N0 &mt F1 N1  &mt F2 N2  &mt F3 N3 &none &none &none &none &none &ext_power EP_TOG
                 &none &none &none &none
         >;
