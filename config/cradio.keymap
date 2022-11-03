@@ -34,7 +34,7 @@
 
 &nav_layer {
         bindings = <
-                &none &none &none &none &none &none &none &kp HOME &kp UP &kp END &none
+                &none &none &none &none &none &none &kp HOME &kp UP &kp END &none
                 &sk LSHIFT &sk LCTRL &sk LALT &sk LWIN &none &none &kp LEFT &kp DOWN &kp RIGHT &none
                 &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &none &kp PG_UP &kp PG_DN &none &none
                 &trans &trans &trans &mo 3 
