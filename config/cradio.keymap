@@ -1,8 +1,8 @@
-// Stop triggering combos with colemak
 // TODO: t g b support for gaming layer
-// TODO: bluetooth toggling
 // TODO: uk layout toggle for Adam?
+// finish alt tab
 // maybe dedicated gif ss keys?
+// TODO: bluetooth toggling
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -22,7 +22,6 @@
         };
 };
 
-
 &default_layer {
         bindings = <
                 &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI
@@ -36,7 +35,7 @@
         bindings = <
                 &none &none &none &none &none &none &kp HOME &kp UP &kp END &none
                 &sk LSHIFT &sk LCTRL &sk LALT &sk LWIN &none &none &kp LEFT &kp DOWN &kp RIGHT &none
-                &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &none &kp PG_UP &kp PG_DN &none &none
+                &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(Y) &kp LC(V) &none &kp PG_UP &kp PG_DN &none &none
                 &trans &trans &trans &mo 3 
         >;
 };
@@ -44,8 +43,8 @@
 &sym_layer {
         bindings = <
                 &none &kp LBKT &kp LBRC &kp LPAR &kp TILDE &kp CARET &kp RPAR &kp RBRC &kp LBKT &kp GRAVE
-                &kp MINUS &kp STAR &kp EQUAL &kp UNDER &kp DOLLAR &kp HASH &kp QMARK &kp EXCL &kp AMPS &kp BSLH
-                &kp EQUAL &kp PIPE &kp AT &kp FSLH &kp PRCNT &none &none &none &none &none
+                &kp MINUS &kp STAR &kp PLUS &kp EQUAL &kp DOLLAR &kp HASH &kp QMARK &kp EXCL &kp AMPS &kp BSLH
+                &kp UNDER &kp PIPE &kp AT &kp FSLH &kp PRCNT &none &none &none &none &none
                 &mo 3 &trans &trans &trans
         >;
 };
@@ -83,18 +82,19 @@
     combos {
         compatible = "zmk,combos";
        
-        combo_tab { timeout-ms = <50>; key-positions = <12 13>; bindings = <&kp TAB>; };
-        combo_esc { timeout-ms = <50>; key-positions = <0 1>; bindings = <&kp ESC>; };
-        combo_del_char { timeout-ms = <50>; key-positions = <6 7>; bindings = <&kp DEL>; };
-        combo_del_word { timeout-ms = <50>; key-positions = <6 7 8>; bindings = <&kp LC(DEL)>; };
-        combo_backspace { timeout-ms = <50>; key-positions = <16 17>; bindings = <&kp BACKSPACE>; }; 
-        combo_backspace_word { timeout-ms = <50>; key-positions = <16 17 18>; bindings = <&kp LC(BACKSPACE)>; };
-        combo_enter { timeout-ms = <50>; key-positions = <16 18>; bindings = <&kp ENTER>; };
-        combo_l_reset { timeout-ms = <50>; key-positions = <4 14 24>; bindings = <&bootloader>; };
-        combo_r_reset { timeout-ms = <50>; key-positions = <5 15 25>; bindings = <&bootloader>; };
+        combo_tab { timeout-ms = <25>; key-positions = <12 13>; bindings = <&kp TAB>; };
+        combo_esc { timeout-ms = <25>; key-positions = <0 1>; bindings = <&kp ESC>; };
+        combo_del_char { timeout-ms = <25>; key-positions = <6 7>; bindings = <&kp DEL>; };
+        combo_del_word { timeout-ms = <25>; key-positions = <6 7 8>; bindings = <&kp LC(DEL)>; };
+        combo_backspace { timeout-ms = <25>; key-positions = <16 17>; bindings = <&kp BACKSPACE>; }; 
+        combo_backspace_word { timeout-ms = <25>; key-positions = <16 17 18>; bindings = <&kp LC(BACKSPACE)>; };
+        combo_enter { timeout-ms = <25>; key-positions = <16 18>; bindings = <&kp ENTER>; };
+        combo_l_reset { timeout-ms = <25>; key-positions = <4 14 24>; bindings = <&bootloader>; };
+        combo_r_reset { timeout-ms = <25>; key-positions = <5 15 25>; bindings = <&bootloader>; };
         
-        // combo_caps_lock { timeout-ms = <50>; key-positions = <20 21>; bindings = <&kp CAPS>; };
-        combo_gaming_enter { timeout-ms = <50>; key-positions = <21 23>; bindings = <&tog 4>;};
-        combo_tog_qwerty { timeout-ms = <50>; key-positions = <26 28>; bindings = <&tog 5>;};
+        // combo_caps_lock { timeout-ms = <25>; key-positions = <20 21>; bindings = <&kp CAPS>; };
+        combo_gaming_enter { timeout-ms = <25>; key-positions = <21 23>; bindings = <&tog 4>;};
+        combo_tog_qwerty { timeout-ms = <25>; key-positions = <26 28>; bindings = <&tog 5>;};
+        combo_alt_tab { timeout-ms = <25>; key-positions = <11 22>; bindings = <&kp LALT(TAB)>;};
     };
 };
