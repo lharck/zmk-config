@@ -1,5 +1,14 @@
 // TODO: t g b support for gaming layer
+
 // TODO: uk layout toggle for Adam?
+/* 
+        tilde is ¬
+        hashtag is £
+        backslash is #
+        pipe is ~
+        at is "
+*/
+
 // finish alt tab
 // maybe dedicated gif ss keys?
 // TODO: bluetooth toggling
@@ -42,7 +51,7 @@
 
 &sym_layer {
         bindings = <
-                &none &kp LBKT &kp LBRC &kp LPAR &kp TILDE &kp CARET &kp RPAR &kp RBRC &kp LBKT &kp GRAVE
+                &kp GRAVE &kp LBKT &kp LBRC &kp LPAR &kp TILDE &kp CARET &kp RPAR &kp RBRC &kp LBKT &none
                 &kp MINUS &kp STAR &kp PLUS &kp EQUAL &kp DOLLAR &kp HASH &kp QMARK &kp EXCL &kp AMPS &kp BSLH
                 &kp UNDER &kp PIPE &kp AT &kp FSLH &kp PRCNT &none &none &none &none &none
                 &mo 3 &trans &trans &trans
