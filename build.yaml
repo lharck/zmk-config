@@ -21,11 +21,11 @@ include:
     shield: cradio_right
 
   # adux firmware
-  - board: nice_nano_v2
-    shield: a_dux_left
+  # - board: nice_nano_v2
+  # shield: a_dux_left
 
-  - board: nice_nano_v2
-    shield: a_dux_right
+  # - board: nice_nano_v2
+  #  shield: a_dux_right
   
   # reset firmware
   # - board: nice_nano_v2
