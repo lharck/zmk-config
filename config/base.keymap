@@ -26,6 +26,7 @@
                 settings_layer: layer3 {};
                 gaming_layer: layer4 {};
                 qwerty_layer: layer5 {};
+                mouse_layer: layer6 {};
         };
 };
 
