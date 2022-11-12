@@ -10,8 +10,6 @@
 */
 
 // finish alt tab
-// maybe dedicated gif ss keys?
-// TODO: bluetooth toggling
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -60,9 +58,9 @@
 
 &settings_layer {
         bindings = <
-                &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none &none &none &none &none &none
-                &kp F11 &mt F4 N4  &mt F5 N5  &mt F6 N6 &none  &none &none &none &none &none
-                &mt F10 N0   &mt F1 N1  &mt F2 N2  &mt F3 N3  &none  &none &none &none &none &none
+                &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
+                &kp F11 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &none
+                &none &mt F1 N1 &mt F2 N2 &mt F3 N3 r&mt F10 N0 &none &none &none &none &none
                 &none &none &none &none
         >;
 };
