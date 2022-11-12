@@ -83,6 +83,15 @@
         >;
 };
 
+&mouse_layer {
+        bindings = <
+                &none &none &none &none &none &none &none &none &mmv MOVE_UP &none
+                &none &none &none &none &none &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
+                &none &none &none &none &none &none &none &none &none &none
+                &none &none &none &none
+        >;
+};
+
 
 // Key postions reference: https://i.imgur.com/Xt1ydn1.png
 / {
