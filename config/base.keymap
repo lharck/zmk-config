@@ -1,0 +1,107 @@
+// TODO: t g b support for gaming layer
+
+// TODO: uk layout toggle for Adam?
+/* 
+        tilde is ¬
+        hashtag is £
+        backslash is #
+        pipe is ~
+        at is "
+*/
+
+// finish alt tab
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer: layer0 {};
+                nav_layer: layer1 {};
+                sym_layer: layer2 {};
+                settings_layer: layer3 {};
+                gaming_layer: layer4 {};
+                qwerty_layer: layer5 {};
+        };
+};
+
+&default_layer {
+        bindings = <
+                &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI
+                &kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
+                &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp APOS
+                &mo 1 &kp LSHFT &kp SPACE &mo 2                          
+        >;
+};
+
+&nav_layer {
+        bindings = <
+                &none &none &none &none &none &none &kp HOME &kp UP &kp END &none
+                &sk LSHIFT &sk LCTRL &sk LALT &sk LWIN &none &none &kp LEFT &kp DOWN &kp RIGHT &none
+                &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(Y) &kp LC(V) &none &kp PG_UP &kp PG_DN &none &none
+                &trans &trans &trans &mo 3 
+        >;
+};
+
+&sym_layer {
+        bindings = <
+                &kp GRAVE &kp LBKT &kp LBRC &kp LPAR &kp TILDE &kp CARET &kp RPAR &kp RBRC &kp LBKT &none
+                &kp MINUS &kp STAR &kp PLUS &kp EQUAL &kp DOLLAR &kp HASH &kp QMARK &kp EXCL &kp AMPS &kp BSLH
+                &kp UNDER &kp PIPE &kp AT &kp FSLH &kp PRCNT &none &none &none &none &none
+                &mo 3 &trans &trans &trans
+        >;
+};
+
+&settings_layer {
+        bindings = <
+                &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
+                &kp F11 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &none
+                &none &mt F1 N1 &mt F2 N2 &mt F3 N3 &mt F10 N0 &none &none &none &none &none
+                &none &none &none &none
+        >;
+};
+
+&gaming_layer {
+        bindings = <
+                &kp LALT &kp Q &kp W &kp E &kp R &none &none &none &none &none
+                &kp LCTRL &kp A &kp S &kp D &kp F &none &none &none &none &none
+                &kp LSHIFT &kp Z &kp X &kp C &kp V &none &none &none &none &kp RSHIFT
+                &mo 3 &kp SPACE &none &none
+        >;
+};
+
+&qwerty_layer {
+        bindings = <
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
+                &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI
+                &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp APOS
+                &mo 1 &kp LSHFT &kp SPACE &mo 2
+        >;
+};
+
+
+// Key postions reference: https://i.imgur.com/Xt1ydn1.png
+/ {
+    combos {
+        compatible = "zmk,combos";
+       
+        combo_tab { timeout-ms = <25>; key-positions = <12 13>; bindings = <&kp TAB>; };
+        combo_esc { timeout-ms = <25>; key-positions = <0 1>; bindings = <&kp ESC>; };
+        combo_del_char { timeout-ms = <25>; key-positions = <6 7>; bindings = <&kp DEL>; };
+        combo_del_word { timeout-ms = <25>; key-positions = <6 7 8>; bindings = <&kp LC(DEL)>; };
+        combo_backspace { timeout-ms = <25>; key-positions = <16 17>; bindings = <&kp BACKSPACE>; }; 
+        combo_backspace_word { timeout-ms = <25>; key-positions = <16 17 18>; bindings = <&kp LC(BACKSPACE)>; };
+        combo_enter { timeout-ms = <25>; key-positions = <16 18>; bindings = <&kp ENTER>; };
+        combo_l_reset { timeout-ms = <25>; key-positions = <4 14 24>; bindings = <&bootloader>; };
+        combo_r_reset { timeout-ms = <25>; key-positions = <5 15 25>; bindings = <&bootloader>; };
+        
+        // combo_caps_lock { timeout-ms = <25>; key-positions = <20 21>; bindings = <&kp CAPS>; };
+        combo_gaming_enter { timeout-ms = <25>; key-positions = <21 23>; bindings = <&tog 4>;};
+        combo_tog_qwerty { timeout-ms = <25>; key-positions = <26 28>; bindings = <&tog 5>;};
+        combo_alt_tab { timeout-ms = <25>; key-positions = <11 22>; bindings = <&kp LALT(TAB)>;};
+    };
+};
