@@ -32,9 +32,9 @@
 
 &default_layer {
         bindings = <
-                &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI
+                &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp APOS
                 &kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
-                &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp APOS
+                &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SEMIt
                 &mo 1 &kp LSHFT &kp SPACE &mo 2                          
         >;
 };
@@ -50,9 +50,9 @@
 
 &sym_layer {
         bindings = <
-                &kp GRAVE &kp LBKT &kp LBRC &kp LPAR &kp TILDE &kp CARET &kp RPAR &kp RBRC &kp LBKT &none
-                &kp MINUS &kp STAR &kp PLUS &kp EQUAL &kp DOLLAR &kp HASH &kp QMARK &kp EXCL &kp AMPS &kp BSLH
-                &kp UNDER &kp PIPE &kp AT &kp FSLH &kp PRCNT &none &none &none &none &none
+                &kp GRAVE &kp LBKT &kp LBRC &kp LPAR &kp PERCENT &kp CARET &kp RPAR &kp RBRC &kp LBKT &none
+                &kp MINUS &kp STAR &kp PLUS &kp EQUAL &kp TILDE &kp DOLLAR &kp AND &kp PIPE &kp EXCL &kp QUESTION
+                &kp UNDER &kp HASH &kp AT &kp FSLH &kp BSLH &none &none &none &none &none
                 &mo 3 &trans &trans &trans
         >;
 };
@@ -60,8 +60,8 @@
 &settings_layer {
         bindings = <
                 &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
-                &kp F11 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &none
-                &none &mt F1 N1 &mt F2 N2 &mt F3 N3 &mt F10 N0 &none &none &none &none &none
+                &mt F10 N0 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &none
+                &kp F11 &mt F1 N1 &mt F2 N2 &mt F3 N3 &none &none &none &none &none &none
                 &none &none &none &none
         >;
 };
