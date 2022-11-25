@@ -66,10 +66,10 @@
 
 &nav_layer {
         bindings = <
-                &none &none &none &none &none &none &kp HOME &kp UP &kp END &none
-                &sk LSHIFT &sk LCTRL &sk LALT &sk LWIN &none &none &kp LEFT &kp DOWN &kp RIGHT &none
-                &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(Y) &kp LC(V) &none &kp PG_UP &kp PG_DN &none &none
-                &trans &trans &trans &mo 3 
+                &none &none &none &none &none &none &none &none &none &none
+                &sk LWIN &sk LALT  &sk LCTRL &sk LSHIFT &none &kc K_CMENU &kp LEFT &kp DOWN &kp UP &kp RIGHT
+                &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(Y) &kp LC(V) &kp INSERT &kp HOME &kp PG_DN &kp PG_UP &kp END
+                &trans &trans &trans &mo SETTINGS_LAYER
         >;
 };
 
@@ -78,7 +78,7 @@
                 &kp GRAVE &kp LBKT &kp LBRC &kp LPAR &kp TILDE &kp CARET &kp RPAR &kp RBRC &kp LBKT &none
                 &kp MINUS &kp STAR &kp PLUS &kp EQUAL &kp DOLLAR &kp HASH &kp QMARK &kp EXCL &kp AMPS &kp BSLH
                 &kp UNDER &kp PIPE &kp AT &kp FSLH &kp PRCNT &none &none &none &none &none
-                &mo 3 &trans &trans &trans
+                &mo SETTINGS_LAYER &trans &trans &trans
         >;
 };
 
