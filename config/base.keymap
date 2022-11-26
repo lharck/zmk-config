@@ -84,9 +84,9 @@
 
 &settings_layer {
         bindings = <
-                &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
-                &kp F11 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &none
-                &none &mt F1 N1 &mt F2 N2 &mt F3 N3 &mt F10 N0 &none &none &none &none &none
+                &kp F12 &kp F7 &kp F8 &kp F9 &none &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
+                &kp F11 &kp F4 &kp F5 &kp F6 &none &none &none &none &none &none
+                &kp F10 &kp F1 &kp F2 &kp F3 &none &none &none &none &none &none
                 &none &none &none &none
         >;
 };
@@ -111,10 +111,10 @@
 
 &num_layer {
         bindings = <
-                &kp F12 &mt F7 N7 &mt F8 N8 &mt F9 N9 &none &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
-                &kp F11 &mt F4 N4 &mt F5 N5 &mt F6 N6 &none &none &none &none &none &none
-                &none &mt F1 N1 &mt F2 N2 &mt F3 N3 &mt F10 N0 &none &none &none &none &none
-                &none &none &none &none
+                &kp LEFT_BRACKET &kp N7 &kp N8 &kp N9 &kp RIGHT_BRACKET &none &none &none &none &none
+                &none &kp N4 &kp N5 &kp N6 &kp STAR &none &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN
+                &none &kp N1 &kp N2 &kp N3 &kp MINUS &none &none &none &none &none
+                &kp N0 &kp PLUS &none &none
         >;
 };
 
