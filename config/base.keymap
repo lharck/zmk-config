@@ -67,7 +67,7 @@
 &nav_layer {
         bindings = <
                 &none &none &none &none &none &none &none &none &none &none
-                &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN &kp K_CMENU &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
+                &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN &none &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
                 &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(Y) &kp LC(V) &kp INSERT &kp HOME &kp PG_UP &kp PG_DN &kp END
                 &trans &trans &trans &mo SETTINGS_LAYER
         >;
