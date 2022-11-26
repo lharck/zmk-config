@@ -67,7 +67,7 @@
 &nav_layer {
         bindings = <
                 &none &none &none &none &none &none &none &none &none &none
-                &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN &none &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
+                &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN &kp K_CONTEXT_MENU &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
                 &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(Y) &kp LC(V) &kp INSERT &kp HOME &kp PG_UP &kp PG_DN &kp END
                 &trans &trans &trans &mo SETTINGS_LAYER
         >;
@@ -75,8 +75,8 @@
 
 &sym_layer {
         bindings = <
-                &kp GRAVE &kp LPAR &kp RPAR &kp LBRC &kp RBRC &kp none &kp CARET &kp PERCENT &kp DOLLAR &none
-                &kp STAR &kp MINUS &kp PLUS &kp EQUAL &kp TILDE &kp none &kp AMPERSAND &kp PIPE &kp EXCLAMATION &kp QUESTION
+                &kp GRAVE &kp LPAR &kp RPAR &kp LBRC &kp RBRC &none &kp CARET &kp PERCENT &kp DOLLAR &none
+                &kp STAR &kp MINUS &kp PLUS &kp EQUAL &kp TILDE &none &kp AMPERSAND &kp PIPE &kp EXCLAMATION &kp QUESTION
                 &kp HASH &kp UNDER &kp AT &kp FSLH &kp BSLH &none &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN
                 &mo SETTINGS_LAYER &trans &trans &trans
         >;
