@@ -26,16 +26,15 @@
 #define NUM_LAYER 6
 
 / {    
-        behaviors {
-                hm: homerow_mods {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "HOMEROW_MODS";
-                        #binding-cells = <2>;
-                        tapping-term-ms = <300>;
-                        quick-tap-ms = <0>;
-                        flavor = "tap-preferred";
-                        bindings = <&kp>, <&kp>;
-                };
+        gqt: global-quick-tap {
+                compatible = "zmk,behavior-hold-tap";
+                label = "GLOBAL_QUICK_TAP";
+                #binding-cells = <2>;
+                flavor = "tap-preferred";
+                tapping-term-ms = <200>;
+                quick-tap-ms = <125>;
+                global-quick-tap;
+                bindings = <&kp>, <&kp>;
         };
 
         keymap {
@@ -58,7 +57,7 @@
 &default_layer {
         bindings = <
                 &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp APOS
-                &hm LGUI A &hm LALT R &hm LCTL S &hm LSHIFT T &kp G &kp M &kp N &kp E &kp I &kp O
+                &gqt LGUI A &gqt LALT R &gqt LCTL S &gqt LSHIFT T &kp G &kp M &kp N &kp E &kp I &kp O
                 &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SEMI
                 &mo NAV_LAYER &mo MOUSE_LAYER &lt NUM_LAYER SPACE &mo SYM_LAYER                          
         >;
