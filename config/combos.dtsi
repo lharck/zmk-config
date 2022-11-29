@@ -14,7 +14,7 @@
 #define COMBO_TERM_FAST 20
 #define COMBO_TERM_SLOW 35
 
-/* Punctuation (horizontal left hand) 
+/* Punctuation (horizontal left hand) */
 ZMK_COMBO_ADV(num,   &num_word,     LT3 LT1,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO_ADV(esc,   &kp ESC,       LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO_ADV(app,   &kp LG(SPACE), LT2 LT1,     DEF NAV NUM, COMBO_TERM_FAST)
@@ -57,4 +57,4 @@ ZMK_COMBO_ADV(under, &kp UNDER,     RM0 RB0,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO_ADV(minus, &kp MINUS,     RM1 RB1,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO_ADV(fslh,  &kp FSLH,      RM2 RB2,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO_ADV(pipe,  &kp PIPE,      RM3 RB3,     DEF NAV NUM, COMBO_TERM_SLOW)
-*/
+
