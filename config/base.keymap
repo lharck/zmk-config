@@ -27,6 +27,42 @@
 
 #include "combos.dtsi"  // must be sourced after layer-shortcuts
 #include "mouse.dtsi"
+#include "xtr_defaults.h"
+
+
+/* Settings */
+
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <220>;              // repeat on tap-into-hold
+    hold-trigger-key-positions = <0>;  // tap on interrupt
+};
+
+#define QUICK_TAP_MS 175
+
+&sk {  // sticky-key config
+    release-after-ms = <600>;  // release after 0.6s
+    quick-release;             // no double capitalization when rolling keys
+};
+
+&sl {  // sticky-layer config
+    ignore-modifiers;
+};
+
+&lt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+&caps_word {  // mods deactivate caps-word, requires PR #1441
+    /delete-property/ ignore-modifiers;
+};
+
+&num_word {  // num-word, requires PR #1441
+    layers = <NUM>;
+};
 
 / {    
         behaviors {
