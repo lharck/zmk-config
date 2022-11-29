@@ -27,7 +27,6 @@
 
 #include "combos.dtsi"  // must be sourced after layer-shortcuts
 #include "mouse.dtsi"
-#include "xtr_defaults.h"
 
 / {    
         behaviors {
