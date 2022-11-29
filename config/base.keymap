@@ -25,6 +25,9 @@
 #define MOUSE_LAYER 5
 #define NUM_LAYER 6
 
+#include "combos.dtsi"  // must be sourced after layer-shortcuts
+#include "mouse.dtsi"
+
 / {    
         behaviors {
                 hm: homerow_mods {
