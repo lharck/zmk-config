@@ -19,10 +19,10 @@
 
 #define DEF 0
 #define NAV 1
-#define SYM_LAYER 2
+#define SYM 2
 #define FN 3
-#define GAME_LAYER 4
-#define MOUSE_LAYER 5
+#define GAME 4
+#define MOU 5
 #define NUM 6
 
 #include "combos.dtsi"  // must be sourced after layer-shortcuts
@@ -101,7 +101,7 @@ ZMK_LAYER(default_layer,
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp Z        &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SEMI
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                   &mo NAV       &mo MOUSE_LAYER   &lt NUM SPACE &mo SYM_LAYER    
+                                                   &mo NAV       &mo MOU   &lt NUM SPACE &mo SYM    
      //                                           ╰───────────────────────────╯   ╰───────────────────────────╯
 )
 
