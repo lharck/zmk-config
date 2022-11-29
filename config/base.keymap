@@ -94,52 +94,90 @@ ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 ZMK_LAYER(default_layer,
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp F        &kp P         &kp B                               &kp J          &kp L          &kp U         &kp Y          &kp APOS
-     &hml LGUI A &hml LALT R &hml LCTL S &hml LSHIFT T &kp G &kp M &kp N &kp E &kp I &kp O
-     &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SEMI
-     &mo NAV &mo MOUSE_LAYER &lt NUM SPACE &mo SYM_LAYER    
+     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+          &kp Q         &kp W         &kp F         &kp P        &kp B             &kp J         &kp L         &kp U         &kp Y         &kp APOS
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+          &hml LGUI A  &hml LALT R   &hml LCTL S   &hml LSHIFT T &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+          &kp Z        &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SEMI
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                                                   &mo NAV       &mo MOUSE_LAYER   &lt NUM SPACE &mo SYM_LAYER    
+     //                                           ╰───────────────────────────╯   ╰───────────────────────────╯
 )
 
 
 ZMK_LAYER(nav_layer,   
-     &none &none &none &none &none &none &none &none &none &none
-     &kp LGUI &kp LALT &kp LCTL &kp LSHIFT &kp K_CONTEXT_MENU &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
-     &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(Y) &kp LC(V) &kp INSERT &kp HOME &kp PG_UP &kp PG_DN &kp END
-     &trans &trans &trans &mo FN
+     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+         &none         &none        &none         &none         &none             &none         &none         &none         &none         &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp LGUI      &kp LALT      &kp LCTL      &kp LSHIFT    &kp K_CONTEXT_MENU &none        &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(Y)     &kp LC(V)         &kp INSERT    &kp HOME      &kp PG_UP     &kp PG_DN     &kp END
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                                                   &trans        &trans            &trans        &mo FN
+     //                                           ╰───────────────────────────╯   ╰───────────────────────────╯
+
 )
 
 ZMK_LAYER(sym_layer,
-     &kp GRAVE &kp LPAR &kp RPAR &kp LBRC &kp RBRC &none &kp CARET &kp PERCENT &kp DOLLAR &none
-     &kp STAR &kp MINUS &kp PLUS &kp EQUAL &kp TILDE &none &kp AMPERSAND &kp PIPE &kp EXCLAMATION &kp QUESTION
-     &kp HASH &kp UNDER &kp AT &kp FSLH &kp BSLH &none &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN
-     &mo FN &trans &trans &trans
+     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+         &kp GRAVE     &kp LPAR      &kp RPAR      &kp LBRC      &kp RBRC          &none         &kp CARET     &kp PERCENT   &kp DOLLAR    &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp STAR      &kp MINUS     &kp PLUS      &kp EQUAL     &kp TILDE         &none         &kp AMPERSAND &kp PIPE      &kp EXCLAMATION &kp QUESTION
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp HASH      &kp UNDER     &kp AT        &kp FSLH      &kp BSLH          &none         &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LWIN
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                                                  &mo FN        &trans            &trans        &trans
+     //                                           ╰───────────────────────────╯   ╰───────────────────────────╯
 )
 
 ZMK_LAYER(settings_layer,
-     &kp F12 &kp F7 &kp F8 &kp F9 &none &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
-     &kp F11 &kp F4 &kp F5 &kp F6 &none &none &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN
-     &kp F10 &kp F1 &kp F2 &kp F3 &none &none &none &none &none &none
-     &none &none &none &none
+     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+         &kp F12       &kp F7        &kp F8        &kp F9        &none             &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp F11       &kp F4        &kp F5        &kp F6        &none             &none         &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LWIN
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp F10       &kp F1        &kp F2        &kp F3        &none             &none         &none         &none         &none         &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                                                   &none         &none             &none         &none
+     //                                           ╰───────────────────────────╯   ╰───────────────────────────╯
 )
 
 ZMK_LAYER(gaming_layer,
-     &kp LALT &kp Q &kp W &kp E &kp R &none &none &none &none &none
-     &kp LCTRL &kp A &kp S &kp D &kp F &none &none &none &none &none
-     &kp LSHIFT &kp Z &kp X &kp C &kp V &none &none &none &none &kp RSHIFT
-     &mo FN &kp SPACE &none &none
+     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+         &kp LALT      &kp Q         &kp W         &kp E         &kp R             &none         &none         &none         &none         &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp LCTRL     &kp A         &kp S         &kp D         &kp F             &none         &none         &none         &none         &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp LSHIFT    &kp Z         &kp X         &kp C         &kp V             &none         &none         &none         &none         &kp RSHIFT
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                                                   &mo FN        &kp SPACE         &none         &none
+     //                                           ╰───────────────────────────╯   ╰───────────────────────────╯
+
 )
 
 ZMK_LAYER(mouse_layer, 
-     &none &none &none &none &none &none &none &none &none &none
-     &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN &none &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
-     &none &none &none &mkp MCLK &none &none &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_UP &mwh SCROLL_RIGHT
-     &none &none &mkp LCLK &mkp RCLK
+     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+         &none        &none         &none         &none         &none             &none         &none         &none         &none         &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LWIN      &none             &none     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &none         &none         &none         &mkp MCLK     &none             &none     &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_UP &mwh SCROLL_RIGHT
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                                                   &none         &none             &mkp LCLK     &mkp RCLK
+     //                                           ╰───────────────────────────╯   ╰───────────────────────────╯
+
 )
 
 ZMK_LAYER(num_layer,
-     &kp LEFT_BRACKET &kp N7 &kp N8 &kp N9 &kp RIGHT_BRACKET &none &none &none &none &none
-     &none &kp N4 &kp N5 &kp N6 &kp STAR &none &kp LSHIFT &kp LCTRL &kp LALT &kp LWIN
-     &none &kp N1 &kp N2 &kp N3 &kp MINUS &none &none &none &none &none
-     &kp N0 &kp PLUS &none &none
+     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+         &kp LEFT_BRACKET &kp N7     &kp N8        &kp N9        &kp RIGHT_BRACKET &none         &none         &none         &none         &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &none         &kp N4        &kp N5        &kp N6        &kp STAR          &none         &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LWIN
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &none         &kp N1        &kp N2        &kp N3        &kp MINUS         &none         &none         &none         &none         &none
+     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                                                   &kp N0        &kp PLUS          &none         &none
+     //                                           ╰───────────────────────────╯   ╰───────────────────────────╯
+
 )
