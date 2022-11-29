@@ -64,7 +64,6 @@
     layers = <NUM>;
 };
 
-z
 
 / {    
         behaviors {
