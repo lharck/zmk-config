@@ -10,7 +10,7 @@
 #undef COMBO_HOOK
 #define COMBO_HOOK global-quick-tap-ms = <75>;
 
-#define COMBO_TERM_FAST 20
+#define COMBO_TERM_FAST 25
 #define COMBO_TERM_SLOW 35
 
 /* Punctuation (horizontal left hand) */
